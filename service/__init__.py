@@ -19,3 +19,5 @@ def create_app():
 
 app = create_app()
 loop = asyncio.get_event_loop()
+from .api import api
+app.add_subapp('/api/', api)

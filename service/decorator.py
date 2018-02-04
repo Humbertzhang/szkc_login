@@ -22,4 +22,4 @@ def require_szkc_login(f):
                 content_type = 'application/json',
                 status = 401
             )
-        return decorator
+    return decorator
